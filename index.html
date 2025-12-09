@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeoData EBC</title>
+
+  <meta name="description" content="Explora nuestra página web para conocer acerca de los países que existen.">
+  <meta name="keywords" content="mundo, países, exploraciones, ubicaciones, cultura, tradiciones">
+  <meta name="author" content="Alejandro">
+  <meta name="copyright" content="Alejandro 2025">
+  <meta name="application-name" content="GEO">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Tu CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Banner -->
+<div id="banner" class="p-3 text-white text-center bg-primary">
+  Banner de promoción: ¡Inscríbete ahora y obtén un 20% de descuento en nuestros cursos de viajes!
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="IMG/LOGOGEODATA.jpg" height="50" class="me-2" alt="Logo GeoData">
+      <span class="fw-semibold">GeoData</span>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false"
+      aria-label="Alternar navegación">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNavbar">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="#">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Paises">Países</a></li>
+        <li class="nav-item"><a class="nav-link" href="#Ubicacion">Ubicación</a></li>
+        <li class="nav-item"><a class="nav-link" href="#agregar-imagen">Agregar imagen</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- CARRUSEL -->
+<div id="mainCarousel" class="carousel slide mb-4" data-bs-ride="carousel">
+
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+  </div>
+
+  <div class="carousel-inner rounded-3 shadow-sm">
+
+    <div class="carousel-item active">
+      <img src="IMG/viaje12.jpg" class="d-block w-100" alt="Viajes" style="height: 380px; object-fit:cover;">
+      <div class="carousel-caption d-none d-md-block text-start">
+        <h5>Explora el mundo</h5>
+        <p>Conoce más de los países de tu interés.</p>
+        <a href="#" class="btn btn-primary">Ver página</a>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="IMG/imgan.jpg" class="d-block w-100" alt="Países" style="height: 380px; object-fit:cover;">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Página de internet</h5>
+        <p>Aprende cultura.</p>
+        <a href="#" class="btn btn-light btn-sm">Ver Web</a>
+      </div>
+    </div>
+
+    <div class="carousel-item">
+      <img src="IMG/LOGOGEODATA.jpg" class="d-block w-100" alt="Mapa mundial"
+        style="height: 380px; object-fit:cover;">
+      <div class="carousel-caption d-none d-md-block text-end">
+        <h5>No viajes, explora</h5>
+        <p>Planifica tu próximo viaje hoy.</p>
+        <button class="btn btn-danger btn-sm" data-bs-toggle="modal" data-bs-target="#modalIA">Más información</button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- SECCIÓN PRINCIPAL -->
+<section class="container my-5">
+  <h1 class="text-center mb-4">Bienvenidos a GeoData</h1>
+  <p class="text-center lead">Aprende y domina sobre los países del mundo.</p>
+</section>
+
+<!-- ALERTAS -->
+<section class="container my-5">
+  <h2>Alertas</h2>
+  <div class="alert alert-info">Aquí tienes información de nuestros países con sus datos.</div>
+</section>
+
+<!-- TARJETAS -->
+<section class="container my-5" id="Paises">
+  <h2 class="mb-4">Países destacados</h2>
+
+  <div class="row g-4">
+
+    <div class="col-md-4">
+      <div class="card h-100">
+        <div class="card-body">
+          <h5 class="card-title">Países de IA</h5>
+          <p class="card-text">Aprende sobre las tradiciones de los países.</p>
+          <a href="#" class="btn btn-primary">Más información</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100">
+        <img src="IMG/petra.jpg" class="card-img-top" alt="Países del mundo">
+        <div class="card-body">
+          <h5 class="card-title">Países del mundo</h5>
+          <p class="card-text">Domina las tradiciones del mundo.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card h-100">
+        <div class="card-header">Nuevo país</div>
+        <div class="card-body">
+          <h5 class="card-title">País del mundo con IA</h5>
+          <p class="card-text">Encuentra información del país que más te interese.</p>
+          <a href="#" class="btn btn-success">Quiero ser parte</a>
+        </div>
+        <div class="card-footer">¡Regístrate ahora!</div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="container my-5">
+  <h2>Testimonios de nuestros clientes</h2>
+
+  <!-- TESTIMONIO VIP -->
+  <div class="testimonio-vip d-flex align-items-start mb-4 p-4 border rounded shadow-sm">
+    <img src="IMG/testimonioqw.jpg" alt="Cliente VIP" class="rounded-circle me-3" width="80" height="80">
+    <div>
+      <h5 class="fw-bold">Cliente VIP</h5>
+      <p>"Gracias a GeoData, mis viajes han sido mucho más organizados."</p>
+    </div>
+  </div>
+
+  <!-- TESTIMONIO NORMAL -->
+  <div class="d-flex align-items-start mb-4 p-3 border rounded">
+    <img src="IMG/ciente regu.jpg" alt="Cliente regular" class="rounded-circle me-3" width="80" height="80">
+    <div>
+      <strong>Cliente Regular</strong>
+      <p class="mb-0">Excelente contenido, me ayuda a planificar mis viajes.</p>
+    </div>
+  </div>
+
+  <!-- TESTIMONIO VIP -->
+  <div class="testimonio-vip d-flex align-items-start mb-4 p-4 border rounded shadow-sm">
+    <img src="IMG/testimonio1.jpg" alt="Cliente VIP" class="rounded-circle me-3" width="80" height="80">
+    <div>
+      <h5 class="fw-bold">Cliente VIP</h5>
+      <p>"Todos mis viajes han sido más sencillos y productivos."</p>
+    </div>
+  </div>
+
+</section>
+
+<!-- TABS -->
+<section class="container my-5">
+  <h2>Pestañas (Tabs)</h2>
+
+  <ul class="nav nav-tabs">
+    <li class="nav-item"><button class="nav-link active" data-bs-toggle="tab" data-bs-target="#homeTab">Home</button></li>
+    <li class="nav-item"><button class="nav-link" data-bs-toggle="tab" data-bs-target="#profileTab">Profile</button></li>
+  </ul>
+
+  <div class="tab-content mt-3">
+    <div id="homeTab" class="tab-pane fade show active">
+      <p>Bienvenido al portal de países.</p>
+    </div>
+    <div id="profileTab" class="tab-pane fade">
+      <p>Aquí podrás ver tus países registrados.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FORMULARIO -->
+<section class="container my-5" id="Contacto">
+  <h2>Formulario de inscripción</h2>
+
+  <form class="p-4 border rounded bg-light shadow-sm">
+
+    <div class="mb-3">
+      <label for="nombre" class="form-label">Nombre completo</label>
+      <input type="text" class="form-control" id="nombre" placeholder="Ingresa tu nombre completo">
+    </div>
+
+    <div class="mb-3">
+      <label for="Pais-select" class="form-label">Selecciona el país</label>
+      <select class="form-select" id="Pais-select">
+        <option selected>Elige un país</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Cuba">Cuba</option>
+        <option value="Suiza">Suiza</option>
+      </select>
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label">Modalidad</label><br>
+
+      <input class="form-check-input" type="radio" name="modalidad" id="modalidadPresencial">
+      <label for="modalidadPresencial">Presencial</label><br>
+
+      <input class="form-check-input" type="radio" name="modalidad" id="modalidadOnline" checked>
+      <label for="modalidadOnline">Online</label>
+    </div>
+
+    <div class="mb-3">
+      <label for="Mensaje" class="form-label">Comentarios adicionales</label>
+      <textarea class="form-control" id="Mensaje" rows="3" placeholder="Escribe aquí tus comentarios..."></textarea>
+    </div>
+
+    <div class="text-center">
+      <button type="submit" class="btn btn-success">Enviar inscripción</button>
+    </div>
+
+  </form>
+</section>
+
+<!-- MODAL -->
+<div class="modal fade" id="modalIA" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <div class="modal-header">
+        <h5 class="modal-title">Detalles de los países del mundo</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <div class="modal-body">
+        En esta aplicación aprenderás tradiciones y ubicaciones de los países del mundo.
+      </div>
+
+      <div class="modal-footer">
+        <button class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+        <button class="btn btn-primary">Inscribirme</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- OFFCANVAS -->
+<div class="container text-center my-5">
+  <button class="btn btn-primary" data-bs-toggle="offcanvas" data-bs-target="#offcanvasInfo">
+    Abrir información lateral
+  </button>
+</div>
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasInfo">
+  <div class="offcanvas-header">
+    <h5>Más sobre GeoData</h5>
+    <button class="btn-close" data-bs-dismiss="offcanvas"></button>
+  </div>
+  <div class="offcanvas-body">
+    <p>Descubre más sobre países, ubicación y tradiciones.</p>
+    <p>Síguenos en redes para más contenido.</p>
+  </div>
+</div>
+
+<!-- EVENTO ONCLICK -->
+<section class="container my-5">
+  <h3>Evento onclick</h3>
+  <button class="btn btn-warning" onclick="saludar()">Haz clic para saludar</button>
+  <p id="mensajeOnclick" class="mt-3 fw-bold"></p>
+</section>
+
+<!-- ONMOUSEOVER -->
+<section class="container my-5">
+  <h3>Evento onmouseover</h3>
+  <div id="cuadroColor"
+       onmouseover="CambiaColor()"
+       onmouseout="RestablecerColor()"
+       class="p-5 text-center border rounded"
+       style="background:#eee;">
+    Pasa el cursor por aquí
+  </div>
+</section>
+
+<!-- ONCHANGE -->
+<section class="container my-5">
+  <h3>Evento onchange</h3>
+  <select id="seleccionPais" class="form-select" onchange="mostrarSeleccion()">
+    <option value="">Selecciona un país</option>
+    <option value="España">España</option>
+    <option value="México">México</option>
+    <option value="Argentina">Argentina</option>
+    <option value="Japón">Japón</option>
+  </select>
+  <p id="textoOnchange" class="mt-3 fw-bold"></p>
+</section>
+
+<!-- ADD EVENT LISTENER -->
+<section class="container my-5">
+  <h3>Evento addEventListener</h3>
+  <div class="card shadow-sm" style="width: 28rem">
+    <img id="cardImagen" class="card-img-top"
+         src="IMG/tercerimagen.jpg" alt="Curso de viaje">
+    <div class="card-body">
+      <h5 class="card-title">Curso de viajes</h5>
+      <p class="card-text">Aprende a planificar tus viajes de manera efectiva.</p>
+      <button id="btnCambiarcard" class="btn btn-success">Actualizar información</button>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS IA -->
+<section id="Word" class="container my-5">
+  <h2 class="mb-4">Nuevos servicios con AI</h2>
+  <p class="text-center">Explora nuestros nuevos servicios potenciados por inteligencia artificial.</p>
+
+  <div class="row g-4">
+
+    <!-- Servicio 1 -->
+    <div class="col-md-4">
+      <div class="card-2" id="card1">
+        <img src="IMG/viajesgeo.jpg" class="card-img-top" alt="Asistente de viaje AI">
+        <div class="card-body">
+          <h5 class="card-title">Asistente de viaje AI</h5>
+          <p class="card-text">Planifica tu viaje - precio: 100.</p>
+          <p class="detalle" id="detalle1">
+            Nuestro asistente de viaje por IA genera itinerarios personalizados.
+          </p>
+          <button class="btn btn-success mb-2 btnSelect1">Seleccionar servicio</button>
+          <button class="btn btn-danger btnRemove1">Eliminar servicio</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- WHATSAPP FLOTANTE -->
+<a href="https://wa.me/527221234567"
+   class="whatsapp-float"
+   target="_blank"
+   rel="noopener"
+   aria-label="Chatea por WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- AGREGAR IMAGEN -->
+<section id="agregar-imagen" class="container my-5">
+  <h2 class="mb-4">Agregar Imagenes dinamicamente</h2>
+  <div class="input-group mb-3">
+    <input 
+    type="text" 
+    id="InputImagen" 
+    class="form-control" 
+    placeholder="Ingresa la URL de la imagen">
+    <button id="btnAgregarImagen" class="btn btn-primary">Agregar Imagen</button>
+  </div>
+
+  <!--Contenedor para las imágenes agregadas (corregido ID duplicado) -->
+  <div id="galeria" class="row g-3"></div>
+</section>
+<!---Actividad lista de tareas para merka warrior-->
+<section id="lista-warrior" class="lista-group mb-3">
+  <h2 class="mb-4"> Lista de tareas para Merka Warrior</h2>
+  <!---Boton para eliminar el primer elemento-->
+  <button id="btnEliminarPrimero" class="btn btn-danger mb-3">Eliminar primera tarea</button>
+  <!----Lista original-->
+  <u1 id="listaTareas" class="list-group mb-3">
+    <li class="tarea1" class="list-group-item">Investigar mercado</li>
+    <li class="tarea2" class="list-group-item">Crear plan de negocio</li>
+    <li class="tarea3" class="list-group-item">Desarrollar prototipo</li>
+  </u1>
+    
+  <!---Agregar nueva tarea-->
+  <div class="input-group mb-3">
+    <input id="inputNuevaTarea" type="text" class="form-control" placeholder="Escribe una nueva tarea">
+    <button id="btnAgregarTarea" class="btn btn-success">
+      Agregar tarea</button>
+  </div>
+</section> 
+
+
+<!-- FOOTER -->
+<footer class="bg-dark text-center text-white py-3 mt-5">
+  ©️ 2025 Alejandro Perez 
+  <div class="mt-2">
+    <a href="https://www.facebook.com/alejandro" target="_blank" rel="noopener" class="text-white me-3">
+      <i class="fab fa-facebook fa-lg"></i>
+    </a>
+    <a href="https://www.instagram.com/tuusuario" target="_blank" rel="noopener" class="text-white me-3">
+      <i class="fab fa-instagram fa-lg"></i>
+    </a>
+    <a href="https://www.tiktok.com/@tuusuario" target="_blank" rel="noopener" class="text-white me-3">
+      <i class="fab fa-tiktok fa-lg"></i>
+    </a>
+    <a href="https://www.youtube.com/c/tuusuario" target="_blank" rel="noopener" class="text-white me-3">
+      <i class="fab fa-youtube fa-lg"></i>
+    </a>
+    <a href="https://x.com/tuusuario" target="_blank" rel="noopener" class="text-white">
+      <i class="fab fa-x-twitter fa-lg"></i>
+    </a>
+  </div>
+</footer>
+
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
+

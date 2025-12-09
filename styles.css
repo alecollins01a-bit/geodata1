@@ -1,0 +1,180 @@
+/* ======== PALETA GENERAL ======== */
+:root {
+  --azul: #1E90FF;        /* Azul brillante */
+  --azul-claro: #87CEFA;  /* Azul cielo */
+  --rojo: #FF4C4C;        /* Rojo vivo */
+  --rojo-oscuro: #D93636; /* Rojo fuerte */
+  --texto-oscuro: #222;
+}
+
+/* ======== BODY ======== */
+body {
+  background: var(--azul-claro);
+  color: var(--texto-oscuro);
+  font-family: 'Arial', sans-serif;
+}
+
+/* ======== BANNER PROMOCIONAL ======== */
+#banner {
+  background: var(--rojo);
+  color: white;
+  font-weight: bold;
+  border-bottom: 4px solid var(--rojo-oscuro);
+}
+
+/* ======== NAVBAR ======== */
+.navbar {
+  background: var(--azul) !important;
+}
+
+.navbar-brand span {
+  color: white;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.nav-link {
+  color: white !important;
+}
+
+.nav-link:hover {
+  color: var(--rojo) !important;
+}
+
+/* ======== CARRUSEL ======== */
+.carousel-caption h5,
+.carousel-caption p {
+  background: rgba(0, 0, 0, 0.4);
+  padding: 5px 10px;
+  border-radius: 8px;
+}
+
+/* ======== TARJETAS ======== */
+.card {
+  border: 2px solid var(--azul);
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 18px rgba(0,0,0,0.2);
+}
+
+.card-header,
+.card-footer {
+  background: var(--rojo);
+  color: white;
+  font-weight: bold;
+}
+
+/* ======== BOTONES ======== */
+.btn-primary {
+  background: var(--azul);
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #146ec0;
+}
+
+.btn-success {
+  background: var(--rojo);
+  border: none;
+}
+
+.btn-danger {
+  background: var(--rojo-oscuro);
+  border: none;
+}
+
+/* ======== TESTIMONIOS ======== */
+.testimonio-vip {
+  background: var(--azul);
+  color: white;
+  border-left: 6px solid var(--rojo);
+}
+
+.testimonio-vip img,
+.d-flex img {
+  border: 3px solid var(--rojo);
+}
+
+/* ======== TABS ======== */
+.nav-tabs .nav-link.active {
+  background: var(--rojo) !important;
+  color: white !important;
+  border-color: var(--rojo-oscuro) !important;
+}
+
+.nav-tabs .nav-link:hover {
+  background: var(--azul);
+  color: white !important;
+}
+
+/* ======== FORMULARIO ======== */
+form {
+  background: white;
+  border: 2px solid var(--azul);
+  border-radius: 10px;
+}
+
+label {
+  font-weight: bold;
+  color: var(--rojo-oscuro);
+}
+
+/* ======== MODAL ======== */
+.modal-header {
+  background: var(--azul);
+  color: white;
+}
+
+.modal-footer button {
+  border-radius: 8px;
+}
+
+/* ======== OFFCANVAS ======== */
+.offcanvas-header {
+  background: var(--rojo);
+  color: white;
+}
+
+/* ======== EVENTOS JS ======== */
+#cuadroColor {
+  transition: 0.3s;
+  border: 3px solid var(--azul);
+}
+
+#cuadroColor:hover {
+  background: var(--rojo);
+  color: white;
+}
+
+/* ======== BOTÓN WHATSAPP ======== */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #25D366;
+  padding: 15px;
+  border-radius: 50%;
+  color: white;
+  font-size: 26px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* ======== FOOTER ======== */
+footer {
+  background: var(--rojo);
+  color: white !important;
+  font-weight: bold;
+}
+
+footer a {
+  color: var(--azul-claro) !important;
+}
+
+footer a:hover {
+  color: white !important;
+}
